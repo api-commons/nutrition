@@ -23,7 +23,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- Foods agree on id, description, name and nutrients; barcode and brand reach 46%. The nutrient list is an array of nutrient-amount-unit rows at most providers, the shape the USDA FoodData Central set.
+- Foods agree on id, description, name and nutrients; barcode and brand reach 46%.
 - Recipes agree on name, id, image_url, ingredients and instructions -- the recipe card. Servings reach 40%, and cook time is spelled too many ways to count.
 
 ## Artifacts
