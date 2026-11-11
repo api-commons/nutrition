@@ -1,0 +1,422 @@
+[
+ {
+  "slug": "a2-milk-company",
+  "specs": [
+   "openapi/_original/a2-milk-company-careers-openapi.json",
+   "openapi/_original/a2-milk-company-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aerofarms",
+  "specs": [
+   "openapi/_original/aerofarms-discovery-openapi.yml",
+   "openapi/_original/aerofarms-faq-openapi.yml",
+   "openapi/_original/aerofarms-media-openapi.yml",
+   "openapi/_original/aerofarms-news-openapi.yml",
+   "openapi/_original/aerofarms-pages-openapi.yml",
+   "openapi/_original/aerofarms-products-openapi.yml",
+   "openapi/_original/aerofarms-search-openapi.yml",
+   "openapi/_original/aerofarms-store-openapi.yml",
+   "openapi/_original/aerofarms-taxonomy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "altruistiq",
+  "specs": [
+   "openapi/_original/altruistiq-openapi.yml"
+  ]
+ },
+ {
+  "slug": "api-league",
+  "specs": [
+   "openapi/_original/api-league-art-openapi.yml",
+   "openapi/_original/api-league-books-openapi.yml",
+   "openapi/_original/api-league-food-openapi.yml",
+   "openapi/_original/api-league-games-openapi.yml",
+   "openapi/_original/api-league-humor-openapi.yml",
+   "openapi/_original/api-league-knowledge-openapi.yml",
+   "openapi/_original/api-league-math-openapi.yml",
+   "openapi/_original/api-league-media-openapi.yml",
+   "openapi/_original/api-league-news-openapi.yml",
+   "openapi/_original/api-league-openapi.json",
+   "openapi/_original/api-league-storage-openapi.yml",
+   "openapi/_original/api-league-text-openapi.yml",
+   "openapi/_original/api-league-web-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apicbase",
+  "specs": [
+   "openapi/_original/apicbase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "azumio",
+  "specs": [
+   "openapi/_original/azumio-openapi.json"
+  ]
+ },
+ {
+  "slug": "bigoven",
+  "specs": [
+   "openapi/_original/bigoven-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "calorie-ninjas",
+  "specs": [
+   "openapi/_original/calorieninjas-openapi.yml"
+  ]
+ },
+ {
+  "slug": "campbell-soup",
+  "specs": [
+   "openapi/_original/campbell-soup-wp-json-routes.json"
+  ]
+ },
+ {
+  "slug": "chowly",
+  "specs": [
+   "openapi/_original/chowly-openapi.yml"
+  ]
+ },
+ {
+  "slug": "crunchtime",
+  "specs": [
+   "openapi/_original/crunchtime-cruise-platform-openapi.yml",
+   "openapi/_original/crunchtime-cruise-platform-readme-slices.json",
+   "openapi/_original/crunchtime-inventory-labor-openapi.yml",
+   "openapi/_original/crunchtime-inventory-labor-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "davita",
+  "specs": [
+   "openapi/_original/davita-wp-rest.yml",
+   "openapi/_original/davita-www-wp-json-index.json"
+  ]
+ },
+ {
+  "slug": "dietlyapi",
+  "specs": [
+   "openapi/_original/dietlyapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "edamam",
+  "specs": [
+   "openapi/_original/edamam-openapi.yml"
+  ]
+ },
+ {
+  "slug": "edamam-recipes",
+  "specs": [
+   "openapi/_original/edamam-food-database-v2-openapi.yml",
+   "openapi/_original/edamam-meal-planner-v1-openapi.yml",
+   "openapi/_original/edamam-nutrition-analysis-v1-openapi.yml",
+   "openapi/_original/edamam-recipe-search-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fatsecret",
+  "specs": [
+   "openapi/_original/fatsecret-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "food-info",
+  "specs": [
+   "openapi/_original/food-info-openapi.json"
+  ]
+ },
+ {
+  "slug": "food-safety-and-inspection-service",
+  "specs": [
+   "openapi/_original/fsis-recall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "free-cocktail-api",
+  "specs": [
+   "openapi/_original/free-cocktail-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fudo",
+  "specs": [
+   "openapi/_original/fudo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "genki-forest",
+  "specs": [
+   "openapi/_original/genki-forest-openapi.json"
+  ]
+ },
+ {
+  "slug": "jelly-belly",
+  "specs": [
+   "openapi/_original/jelly-belly-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kitchenstories",
+  "specs": [
+   "openapi/_original/kitchenstories-internal-openapi.json"
+  ]
+ },
+ {
+  "slug": "lish",
+  "specs": [
+   "openapi/_original/lish-wordpress-openapi.json"
+  ]
+ },
+ {
+  "slug": "logmeal",
+  "specs": [
+   "openapi/_original/logmeal-openapi.json"
+  ]
+ },
+ {
+  "slug": "mealdb",
+  "specs": [
+   "openapi/_original/mealdb-openapi.yml",
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "mealie",
+  "specs": [
+   "openapi/_original/mealie-openapi.json"
+  ]
+ },
+ {
+  "slug": "mealme",
+  "specs": [
+   "openapi/_original/mealme-openapi.yml"
+  ]
+ },
+ {
+  "slug": "national-agricultural-library",
+  "specs": [
+   "openapi/_original/national-agricultural-library-openapi.json"
+  ]
+ },
+ {
+  "slug": "new-york-public-library-whats-on-the-menu",
+  "specs": [
+   "openapi/_original/new-york-public-library-whats-on-the-menu-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "noms",
+  "specs": [
+   "openapi/_original/noms-openapi.json"
+  ]
+ },
+ {
+  "slug": "nory",
+  "specs": [
+   "openapi/_original/nory-middleware-openapi.json"
+  ]
+ },
+ {
+  "slug": "nutrientsdb",
+  "specs": [
+   "openapi/_original/nutrientsdb-sample-api-openapi.yml",
+   "openapi/_original/nutrientsdb-sample-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ok-capsule",
+  "specs": [
+   "openapi/_original/ok-capsule-core-api-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "open-food-facts",
+  "specs": [
+   "openapi/_original/open-food-facts-api-v2-openapi.yml",
+   "openapi/_original/open-food-facts-api-v3-openapi.yml",
+   "openapi/_original/open-food-facts-facets-knowledge-panels-openapi.json",
+   "openapi/_original/open-food-facts-folksonomy-openapi.json",
+   "openapi/_original/open-food-facts-nutripatrol-openapi.json",
+   "openapi/_original/open-food-facts-open-prices-openapi.yml",
+   "openapi/_original/open-food-facts-openapi.yml",
+   "openapi/_original/open-food-facts-search-a-licious-openapi.json"
+  ]
+ },
+ {
+  "slug": "openfda",
+  "specs": [
+   "openapi/_original/openfda-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openmenu",
+  "specs": [
+   "openapi/_original/openmenu-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opply",
+  "specs": [
+   "openapi/_original/opply-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "pepsico",
+  "specs": [
+   "openapi/_original/pepsico-pepsico-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "piknik-spot",
+  "specs": [
+   "openapi/_original/piknik-spot-api-openapi.yaml",
+   "openapi/_original/piknik-spot-openapi.json",
+   "openapi/_original/piknik-spot-openapi.yml"
+  ]
+ },
+ {
+  "slug": "punkapi",
+  "specs": [
+   "openapi/_original/punkapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rakuten",
+  "specs": [
+   "openapi/_original/rakuten-openapi.yml"
+  ]
+ },
+ {
+  "slug": "recipe-api",
+  "specs": [
+   "openapi/_original/recipe-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "redefine-meat",
+  "specs": [
+   "openapi/_original/redefine-meat-content-openapi.json",
+   "openapi/_original/redefine-meat-store-openapi.json"
+  ]
+ },
+ {
+  "slug": "rekki",
+  "specs": [
+   "openapi/_original/rekki-supplier-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "rettfrabonden-com",
+  "specs": [
+   "openapi/_original/rettfrabonden-com-agent-surface-openapi.json",
+   "openapi/_original/rettfrabonden-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rockwell-factorytalk",
+  "specs": [
+   "openapi/_original/rockwell-factorytalk-optix-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sojo-industries",
+  "specs": [
+   "openapi/_original/sojo-industries-victoria-agent-openapi.json"
+  ]
+ },
+ {
+  "slug": "sparkyfitness",
+  "specs": [
+   "openapi/_original/sparkyfitness-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spoonacular",
+  "specs": [
+   "openapi/_original/spoonacular-openapi.yml"
+  ]
+ },
+ {
+  "slug": "starbucks",
+  "specs": [
+   "openapi/_original/starbucks-starbucks-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "swiss-food-composition-database",
+  "specs": [
+   "openapi/_original/swiss-food-composition-database-openapi.json",
+   "openapi/_original/swiss-food-composition-database-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "sysco",
+  "specs": [
+   "openapi/_original/sysco-food-distribution-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tandoor",
+  "specs": [
+   "openapi/_original/tandoor-api-openapi.yml",
+   "openapi/_original/tandoor-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "trustwell",
+  "specs": [
+   "openapi/_original/trustwell-foodlogiq-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tyson-foods",
+  "specs": [
+   "openapi/_original/tyson-foods-edi-integration-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unicef-data",
+  "specs": [
+   "openapi/_original/unicef-geosight-openapi.json",
+   "openapi/_original/unicef-reference-data-manager-openapi.json"
+  ]
+ },
+ {
+  "slug": "united-states-department-of-agriculture",
+  "specs": [
+   "openapi/_original/usda-ers-arms-openapi.yml",
+   "openapi/_original/usda-fooddata-central-openapi.yml",
+   "openapi/_original/usda-nass-quickstats-openapi.yml",
+   "openapi/_original/usda-nrcs-awdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "usda",
+  "specs": [
+   "openapi/_original/usda-fooddata-central-openapi.yml"
+  ]
+ },
+ {
+  "slug": "usda-agricultural-research-service-ars-",
+  "specs": [
+   "openapi/_original/usda-ars-ag-data-commons-openapi.yml",
+   "openapi/_original/usda-ars-fooddata-central-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wger",
+  "specs": [
+   "openapi/_original/wger-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zestful",
+  "specs": [
+   "openapi/_original/zestful-openapi.yml"
+  ]
+ }
+]

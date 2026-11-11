@@ -1,0 +1,16 @@
+provider: piknik-spot
+apis_io: https://apis.io/providers/piknik-spot/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - recipes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/piknik-spot-openapi.json#DELETE /recipes/{id}
+    - openapi/_original/piknik-spot-openapi.json#GET /recipes
+    - openapi/_original/piknik-spot-openapi.json#GET /recipes/{id}
+    - openapi/_original/piknik-spot-openapi.json#PATCH /recipes/{id}
+    - openapi/_original/piknik-spot-openapi.json#POST /recipes

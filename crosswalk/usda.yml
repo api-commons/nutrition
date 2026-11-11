@@ -1,0 +1,27 @@
+provider: usda
+apis_io: https://apis.io/providers/usda/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    - food
+    properties:
+      id: fdcId
+      description: description
+      nutrients:
+      - foodNutrients
+      - nutrients
+      barcode: gtinUpc
+      brand: brandOwner
+      data_type: dataType
+      publication_date: publicationDate
+      fdc_ids: fdcIds
+      format: format
+      ndb_number: ndbNumber
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/usda-fooddata-central-openapi.yml#GET /v1/food/{fdcId}
+    - openapi/_original/usda-fooddata-central-openapi.yml#GET /v1/foods
+    - openapi/_original/usda-fooddata-central-openapi.yml#POST /v1/foods

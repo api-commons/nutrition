@@ -1,0 +1,20 @@
+provider: sparkyfitness
+apis_io: https://apis.io/providers/sparkyfitness/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    properties:
+      id: id
+      name: name
+      barcode: barcode
+      brand: brand
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/sparkyfitness-openapi.yml#DELETE /foods/{id}
+    - openapi/_original/sparkyfitness-openapi.yml#GET /foods
+    - openapi/_original/sparkyfitness-openapi.yml#GET /foods/{foodId}
+    - openapi/_original/sparkyfitness-openapi.yml#POST /foods
+    - openapi/_original/sparkyfitness-openapi.yml#PUT /foods/{id}

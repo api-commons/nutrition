@@ -1,0 +1,18 @@
+provider: swiss-food-composition-database
+apis_io: https://apis.io/providers/swiss-food-composition-database/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    - food
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/swiss-food-composition-database-openapi.json#GET /webresources/BLV-api/food/{DBID}
+    - openapi/_original/swiss-food-composition-database-openapi.json#GET /webresources/BLV-api/foods
+    - openapi/_original/swiss-food-composition-database-openapi.yaml#GET /webresources/BLV-api/food/{DBID}
+    - openapi/_original/swiss-food-composition-database-openapi.yaml#GET /webresources/BLV-api/foods

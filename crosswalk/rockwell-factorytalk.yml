@@ -1,0 +1,12 @@
+provider: rockwell-factorytalk
+apis_io: https://apis.io/providers/rockwell-factorytalk/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - recipes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rockwell-factorytalk-optix-openapi.yml#GET /recipes

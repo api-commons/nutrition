@@ -1,0 +1,17 @@
+provider: food-info
+apis_io: https://apis.io/providers/food-info/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    properties:
+      id: id
+      description: description
+      data_type: dataType
+      publication_date: publicationDate
+      ndb_number: ndbNumber
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/food-info-openapi.json#GET /api/v1/foods/{id}

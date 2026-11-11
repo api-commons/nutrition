@@ -1,0 +1,15 @@
+provider: nutrientsdb
+apis_io: https://apis.io/providers/nutrientsdb/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    properties:
+      name: name
+      nutrients: nutrients
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/nutrientsdb-sample-api-openapi.yml#GET /api/foods
+    - openapi/_original/nutrientsdb-sample-openapi-original.json#GET /api/foods

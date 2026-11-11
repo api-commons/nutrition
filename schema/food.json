@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/nutrition/main/schema/food.json",
+  "title": "Food",
+  "description": "The common food in Nutrition and Recipes, distilled from 13 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.923,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "fdcId",
+        "fdc_id"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.615,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.615,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "name",
+        "label",
+        "title"
+      ]
+    },
+    "nutrients": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.538,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "nutrients",
+        "foodNutrients",
+        "nutrition"
+      ]
+    },
+    "barcode": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.462,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "barcode",
+        "gtinUpc",
+        "upc"
+      ]
+    },
+    "brand": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.462,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "brand",
+        "brandOwner"
+      ]
+    },
+    "data_type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.385,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "dataType"
+      ]
+    },
+    "publication_date": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "publicationDate"
+      ]
+    },
+    "fdc_ids": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "fdcIds"
+      ]
+    },
+    "format": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "format"
+      ]
+    },
+    "ndb_number": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "ndbNumber"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "nutrition",
+    "concept": "food",
+    "providers": 13,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

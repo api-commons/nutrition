@@ -1,0 +1,40 @@
+provider: tandoor
+apis_io: https://apis.io/providers/tandoor/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - food
+    properties:
+      id:
+      - id
+      - fdc_id
+      description: description
+      name: name
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/tandoor-api-openapi.yml#DELETE /api/food/{id}/
+    - openapi/_original/tandoor-api-openapi.yml#GET /api/food/
+    - openapi/_original/tandoor-api-openapi.yml#GET /api/food/{id}/
+    - openapi/_original/tandoor-api-openapi.yml#PATCH /api/food/{id}/
+    - openapi/_original/tandoor-api-openapi.yml#POST /api/food/
+  recipe:
+    path_segment:
+    - recipe
+    properties:
+      name: name
+      id: id
+      image_url: image
+      instructions: steps
+      description: description
+      nutrients: nutrition
+      servings: servings
+      created_at: created_at
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/tandoor-api-openapi.yml#DELETE /api/recipe/{id}/
+    - openapi/_original/tandoor-api-openapi.yml#GET /api/recipe/
+    - openapi/_original/tandoor-api-openapi.yml#GET /api/recipe/{id}/
+    - openapi/_original/tandoor-api-openapi.yml#PATCH /api/recipe/{id}/
+    - openapi/_original/tandoor-api-openapi.yml#POST /api/recipe/

@@ -1,0 +1,126 @@
+context: nutrition
+generated: '2026-11-11'
+adopters:
+- provider: apicbase
+  apis_io: https://apis.io/providers/apicbase/
+  crosswalk: crosswalk/apicbase.yml
+  concepts:
+  - recipe
+- provider: bigoven
+  apis_io: https://apis.io/providers/bigoven/
+  crosswalk: crosswalk/bigoven.yml
+  concepts:
+  - recipe
+- provider: calorie-ninjas
+  apis_io: https://apis.io/providers/calorie-ninjas/
+  crosswalk: crosswalk/calorie-ninjas.yml
+  concepts:
+  - recipe
+- provider: davita
+  apis_io: https://apis.io/providers/davita/
+  crosswalk: crosswalk/davita.yml
+  concepts:
+  - food
+- provider: dietlyapi
+  apis_io: https://apis.io/providers/dietlyapi/
+  crosswalk: crosswalk/dietlyapi.yml
+  concepts:
+  - food
+- provider: food-info
+  apis_io: https://apis.io/providers/food-info/
+  crosswalk: crosswalk/food-info.yml
+  concepts:
+  - food
+- provider: jelly-belly
+  apis_io: https://apis.io/providers/jelly-belly/
+  crosswalk: crosswalk/jelly-belly.yml
+  concepts:
+  - recipe
+- provider: kitchenstories
+  apis_io: https://apis.io/providers/kitchenstories/
+  crosswalk: crosswalk/kitchenstories.yml
+  concepts:
+  - recipe
+- provider: logmeal
+  apis_io: https://apis.io/providers/logmeal/
+  crosswalk: crosswalk/logmeal.yml
+  concepts:
+  - recipe
+- provider: mealie
+  apis_io: https://apis.io/providers/mealie/
+  crosswalk: crosswalk/mealie.yml
+  concepts:
+  - food
+  - recipe
+- provider: national-agricultural-library
+  apis_io: https://apis.io/providers/national-agricultural-library/
+  crosswalk: crosswalk/national-agricultural-library.yml
+  concepts:
+  - food
+- provider: new-york-public-library-whats-on-the-menu
+  apis_io: https://apis.io/providers/new-york-public-library-whats-on-the-menu/
+  crosswalk: crosswalk/new-york-public-library-whats-on-the-menu.yml
+  concepts:
+  - recipe
+- provider: noms
+  apis_io: https://apis.io/providers/noms/
+  crosswalk: crosswalk/noms.yml
+  concepts:
+  - food
+- provider: nutrientsdb
+  apis_io: https://apis.io/providers/nutrientsdb/
+  crosswalk: crosswalk/nutrientsdb.yml
+  concepts:
+  - food
+- provider: piknik-spot
+  apis_io: https://apis.io/providers/piknik-spot/
+  crosswalk: crosswalk/piknik-spot.yml
+  concepts:
+  - recipe
+- provider: recipe-api
+  apis_io: https://apis.io/providers/recipe-api/
+  crosswalk: crosswalk/recipe-api.yml
+  concepts:
+  - recipe
+- provider: rockwell-factorytalk
+  apis_io: https://apis.io/providers/rockwell-factorytalk/
+  crosswalk: crosswalk/rockwell-factorytalk.yml
+  concepts:
+  - recipe
+- provider: sparkyfitness
+  apis_io: https://apis.io/providers/sparkyfitness/
+  crosswalk: crosswalk/sparkyfitness.yml
+  concepts:
+  - food
+- provider: spoonacular
+  apis_io: https://apis.io/providers/spoonacular/
+  crosswalk: crosswalk/spoonacular.yml
+  concepts:
+  - food
+  - recipe
+- provider: swiss-food-composition-database
+  apis_io: https://apis.io/providers/swiss-food-composition-database/
+  crosswalk: crosswalk/swiss-food-composition-database.yml
+  concepts:
+  - food
+- provider: tandoor
+  apis_io: https://apis.io/providers/tandoor/
+  crosswalk: crosswalk/tandoor.yml
+  concepts:
+  - food
+  - recipe
+- provider: united-states-department-of-agriculture
+  apis_io: https://apis.io/providers/united-states-department-of-agriculture/
+  crosswalk: crosswalk/united-states-department-of-agriculture.yml
+  concepts:
+  - food
+- provider: usda
+  apis_io: https://apis.io/providers/usda/
+  crosswalk: crosswalk/usda.yml
+  concepts:
+  - food
+- provider: usda-agricultural-research-service-ars-
+  apis_io: https://apis.io/providers/usda-agricultural-research-service-ars-/
+  crosswalk: crosswalk/usda-agricultural-research-service-ars-.yml
+  concepts:
+  - food

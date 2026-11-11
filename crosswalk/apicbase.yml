@@ -1,0 +1,17 @@
+provider: apicbase
+apis_io: https://apis.io/providers/apicbase/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - recipes
+    properties:
+      name: name
+      id: id
+      category: category
+      created_at: created_date
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/apicbase-openapi.yml#GET /api/v2/products/recipes/
+    - openapi/_original/apicbase-openapi.yml#POST /api/v2/products/recipes/

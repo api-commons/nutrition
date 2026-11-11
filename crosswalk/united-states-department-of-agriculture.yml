@@ -1,0 +1,19 @@
+provider: united-states-department-of-agriculture
+apis_io: https://apis.io/providers/united-states-department-of-agriculture/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - food
+    - foods
+    properties:
+      id: fdcId
+      description: description
+      nutrients: foodNutrients
+      data_type: dataType
+      publication_date: publicationDate
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/usda-fooddata-central-openapi.yml#GET /food/{fdcId}
+    - openapi/_original/usda-fooddata-central-openapi.yml#GET /foods

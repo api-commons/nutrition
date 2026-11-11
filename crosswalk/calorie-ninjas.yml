@@ -1,0 +1,16 @@
+provider: calorie-ninjas
+apis_io: https://apis.io/providers/calorie-ninjas/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - recipe
+    properties:
+      name: title
+      ingredients: ingredients
+      instructions: instructions
+      servings: servings
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/calorieninjas-openapi.yml#GET /recipe

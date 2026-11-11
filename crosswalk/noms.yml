@@ -1,0 +1,19 @@
+provider: noms
+apis_io: https://apis.io/providers/noms/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    properties:
+      id: id
+      description: description
+      name: name
+      nutrients: nutrients
+      barcode: barcode
+      brand: brand
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/noms-openapi.json#GET /v1/foods
+    - openapi/_original/noms-openapi.json#GET /v1/foods/{id}

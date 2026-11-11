@@ -1,0 +1,29 @@
+provider: logmeal
+apis_io: https://apis.io/providers/logmeal/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - dishes
+    - recipe
+    - recipes
+    properties:
+      name:
+      - recipe_name
+      - name
+      id:
+      - id
+      - externalId
+      image_url: image_url
+      ingredients:
+      - ingredients
+      - ingredient_list
+      cuisine: cuisine_type
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/logmeal-openapi.json#GET /v2/dataset/dishes
+    - openapi/_original/logmeal-openapi.json#GET /v2/dataset/dishes/{model_version}
+    - openapi/_original/logmeal-openapi.json#GET /v2/dataset/weightMeasures/dishes
+    - openapi/_original/logmeal-openapi.json#GET /v2/kiosk/external/dishes
+    - openapi/_original/logmeal-openapi.json#GET /v2/kiosk/external/recipe/{restaurant_class_id}

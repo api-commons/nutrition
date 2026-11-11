@@ -1,0 +1,44 @@
+context: nutrition
+name: Nutrition and Recipes
+intro: >-
+  The common nutrition vocabulary -- foods and their nutrients, recipes and their ingredients, and the
+  meals people log -- distilled from the APIs that already exist.
+tags: [Nutrition, Recipes, Food, Diet, Meal Planning, Food Data, Food and Beverage]
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results, hits, value, next, previous, has_more, message, total_count, object]
+common_fields:
+  id: [uuid, guid, external_id, food_id, recipe_id, fdc_id]
+  created_at: [created, created_date, create_time]
+  updated_at: [updated, modified_at, update_time]
+  name: [title, display_name, label, description@foods, food_name, recipe_name]
+  image_url: [image, photo, thumbnail, image_uri]
+concepts:
+  food:
+    segments: [foods, food, ingredients@search|foods, products@food|nutrition, items@nutrition|foods]
+    aliases:
+      brand: [brand_name, brand_owner]
+      nutrients: [nutrition, food_nutrients, nutriments, nutrition_facts]
+      calories: [energy, kcal, nf_calories, energy_kcal]
+      serving_size: [serving, serving_qty, servings, serving_unit]
+      barcode: [upc, gtin, gtin_upc, code]
+  recipe:
+    segments: [recipes, recipe, meals@recipes|mealdb, dishes]
+    aliases:
+      ingredients: [ingredient_lines, extended_ingredients, ingredient_list]
+      instructions: [steps, directions, method, analyzed_instructions]
+      servings: [yield, serves]
+      cook_time: [total_time, ready_in_minutes, cooking_time]
+      cuisine: [cuisines, cuisine_type]
+      nutrients: [nutrition, nutrition_facts]
+  # meal_log was measured and dropped: 1 readable provider.
+
+findings:
+  - >-
+    Foods agree on id, description, name and nutrients; barcode and brand reach 46%. The nutrient list is
+    an array of nutrient-amount-unit rows at most providers, the shape the USDA FoodData Central set.
+  - >-
+    Recipes agree on name, id, image_url, ingredients and instructions -- the recipe card. Servings
+    reach 40%, and cook time is spelled too many ways to count.
+decisions:
+  - >-
+    nutrients is the canonical name for a food's or a recipe's nutrition facts (over nutrition,
+    nutriments and food_nutrients).

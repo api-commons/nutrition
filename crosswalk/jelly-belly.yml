@@ -1,0 +1,13 @@
+provider: jelly-belly
+apis_io: https://apis.io/providers/jelly-belly/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - recipes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/jelly-belly-openapi.yml#GET /api/Recipes
+    - openapi/_original/jelly-belly-openapi.yml#GET /api/Recipes/{id}

@@ -1,0 +1,22 @@
+provider: recipe-api
+apis_io: https://apis.io/providers/recipe-api/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  recipe:
+    path_segment:
+    - recipes
+    properties:
+      name: name
+      id: id
+      ingredients: ingredients
+      instructions: instructions
+      description: description
+      nutrients: nutrition
+      category: category
+      cuisine: cuisine
+      tags: tags
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/recipe-api-openapi.json#GET /api/v1/recipes
+    - openapi/_original/recipe-api-openapi.json#GET /api/v1/recipes/{id}

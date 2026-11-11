@@ -1,0 +1,363 @@
+context: nutrition
+name: Nutrition and Recipes
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Nutrition
+  - Recipes
+  - Food
+  - Diet
+  - Meal Planning
+  - Food Data
+  - Food and Beverage
+  providers_with_harvested_openapi: 62
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  food:
+    segments_seen:
+      foods: 10
+      food: 8
+      products: 1
+    providers_exposing: 14
+    providers_with_readable_schema: 13
+    operations:
+    - operation: GET item
+      providers: 13
+      share: 0.929
+      tier: core
+    - operation: GET collection
+      providers: 10
+      share: 0.714
+      tier: core
+    - operation: POST collection
+      providers: 6
+      share: 0.429
+      tier: extended
+    - operation: DELETE item
+      providers: 3
+      share: 0.214
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.214
+      tier: extended
+    properties:
+    - name: id
+      tier: core
+      providers: 12
+      share: 0.923
+      type: integer
+      spellings:
+      - id
+      - fdcId
+      - fdc_id
+    - name: description
+      tier: core
+      providers: 8
+      share: 0.615
+      type: string
+      spellings:
+      - description
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.615
+      type: string
+      spellings:
+      - name
+      - label
+      - title
+    - name: nutrients
+      tier: core
+      providers: 7
+      share: 0.538
+      type: array
+      spellings:
+      - nutrients
+      - foodNutrients
+      - nutrition
+    - name: barcode
+      tier: extended
+      providers: 6
+      share: 0.462
+      type: string
+      spellings:
+      - barcode
+      - gtinUpc
+      - upc
+    - name: brand
+      tier: extended
+      providers: 6
+      share: 0.462
+      type: string
+      spellings:
+      - brand
+      - brandOwner
+    - name: data_type
+      tier: extended
+      providers: 5
+      share: 0.385
+      type: string
+      spellings:
+      - dataType
+    - name: publication_date
+      tier: extended
+      providers: 4
+      share: 0.308
+      type: string
+      spellings:
+      - publicationDate
+    - name: fdc_ids
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: array
+      spellings:
+      - fdcIds
+    - name: format
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - format
+    - name: ndb_number
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - ndbNumber
+    long_tail_count: 108
+    long_tail_sample:
+    - created_at
+    - food_code
+    - ingredients
+    - plural_name
+    - serving_size
+    - updated_at
+    - aisle
+    - aliases
+    - badges
+    - basis_unit
+    - brand_id
+    - breadcrumbs
+    - calories_kcal
+    - canonical_id
+    - carbs_g
+    - categories
+    - category
+    - child_inherit_fields
+    - cholesterol_mg
+    - confidence
+    - country_of_origin
+    - credits
+    - default_variant
+    - error
+    - extras
+    - facf
+    - fat_g
+    - fiber_g
+    - food_attributes
+    - food_category
+    - food_class
+    - food_group
+    - food_group_id
+    - food_onhand
+    - foodid
+    - full_name
+    - generated_text
+    - generic
+    - households_with_ingredient_food
+    - ignore_shopping
+  recipe:
+    segments_seen:
+      recipes: 9
+      recipe: 6
+      dishes: 3
+    providers_exposing: 13
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.692
+      tier: core
+    - operation: POST collection
+      providers: 6
+      share: 0.462
+      tier: extended
+    - operation: DELETE item
+      providers: 5
+      share: 0.385
+      tier: extended
+    - operation: UPDATE item
+      providers: 5
+      share: 0.385
+      tier: extended
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.154
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.8
+      type: string
+      spellings:
+      - name
+      - title
+      - Title
+      - recipe_name
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - id
+      - recipeId
+      - RecipeID
+      - externalId
+    - name: image_url
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - image
+      - ImageURL
+      - image_url
+    - name: ingredients
+      tier: core
+      providers: 5
+      share: 0.5
+      type: array
+      spellings:
+      - ingredients
+      - Ingredients
+      - ingredient_list
+    - name: instructions
+      tier: core
+      providers: 5
+      share: 0.5
+      type: array
+      spellings:
+      - instructions
+      - steps
+      - Instructions
+      - Steps
+    - name: description
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: string
+      spellings:
+      - description
+      - Description
+    - name: nutrients
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: object
+      spellings:
+      - nutrition
+    - name: servings
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: number
+      spellings:
+      - servings
+      - Servings
+    - name: category
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - category
+      - Category
+    - name: created_at
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - created_date
+      - createdAt
+      - created_at
+    - name: cuisine
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - Cuisine
+      - cuisine_type
+      - cuisine
+    - name: tags
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: array
+      spellings:
+      - tags
+    long_tail_count: 155
+    long_tail_sample:
+    - difficulty
+    - image_id
+    - rating
+    - slug
+    - updated_at
+    - active_minutes
+    - ad_tags
+    - admin_boost
+    - all_categories_text
+    - article
+    - assets
+    - author
+    - auto_computed_nutritional_indicators
+    - available_nutritional_sources
+    - baking_time
+    - bookmark_image_url
+    - bookmark_site_logo
+    - bookmark_url
+    - categories
+    - chef_notes
+    - chefs_note
+    - collection
+    - collection_id
+    - combo
+    - comments
+    - content_id
+    - content_meta
+    - cook_time
+    - cooking_measures
+    - created_by
+    - creation_date
+    - cultural_context
+    - custom_recipe
+    - date_added
+    - date_updated
+    - diameter
+    - diameter_text
+    - dietary
+    - dish
+    - dish_name

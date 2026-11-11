@@ -1,0 +1,16 @@
+provider: dietlyapi
+apis_io: https://apis.io/providers/dietlyapi/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - food
+    properties:
+      id: id
+      name: name
+      barcode: barcode
+      brand: brand
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/dietlyapi-openapi.json#GET /food/{food_id}

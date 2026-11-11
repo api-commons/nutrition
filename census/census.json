@@ -1,0 +1,1512 @@
+{
+ "cohort_size": 62,
+ "unreadable": [
+  {
+   "spec": "piknik-spot/openapi/_original/piknik-spot-api-openapi.yaml",
+   "error": "mapping values are not allowed in this context"
+  }
+ ],
+ "concepts": {
+  "food": {
+   "davita": {
+    "segments": [
+     "food"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/davita-wp-rest.yml#GET /davita/v1/usda/food/{id}"
+    ]
+   },
+   "dietlyapi": {
+    "segments": [
+     "food"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "brand": "string",
+     "barcode": "string",
+     "category": "string",
+     "serving_size_g": "number",
+     "serving_desc": "string",
+     "calories_kcal": "number",
+     "protein_g": "number",
+     "fat_g": "number",
+     "carbs_g": "number",
+     "fiber_g": "number",
+     "sugar_g": "number",
+     "sodium_mg": "number",
+     "saturated_fat_g": "number",
+     "cholesterol_mg": "number",
+     "potassium_mg": "number",
+     "image_url": "string",
+     "image_thumb_url": "string",
+     "source": "string",
+     "confidence": "number",
+     "static_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/dietlyapi-openapi.json#GET /food/{food_id}"
+    ]
+   },
+   "food-info": {
+    "segments": [
+     "foods"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "description": "string",
+     "ndbNumber": "string",
+     "dataType": "string",
+     "publicationDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/food-info-openapi.json#GET /api/v1/foods/{id}"
+    ]
+   },
+   "mealie": {
+    "segments": [
+     "foods"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "message": "string",
+     "error": "boolean",
+     "locale": "string",
+     "page": "integer",
+     "per_page": "integer",
+     "total": "integer",
+     "total_pages": "integer",
+     "items": "array",
+     "next": null,
+     "previous": null,
+     "id": "string",
+     "name": "string",
+     "pluralName": null,
+     "description": "string",
+     "extras": null,
+     "labelId": null,
+     "aliases": "array",
+     "householdsWithIngredientFood": "array",
+     "label": null,
+     "createdAt": null,
+     "updatedAt": null
+    },
+    "evidence": [
+     "openapi/_original/mealie-openapi.json#DELETE /api/foods/{item_id}",
+     "openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/foods",
+     "openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/foods/{item_id}",
+     "openapi/_original/mealie-openapi.json#GET /api/foods",
+     "openapi/_original/mealie-openapi.json#GET /api/foods/{item_id}",
+     "openapi/_original/mealie-openapi.json#POST /api/foods",
+     "openapi/_original/mealie-openapi.json#POST /api/groups/seeders/foods",
+     "openapi/_original/mealie-openapi.json#PUT /api/foods/{item_id}"
+    ]
+   },
+   "national-agricultural-library": {
+    "segments": [
+     "foods",
+     "food"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "dataType": "string",
+     "description": "string",
+     "fdcId": "integer",
+     "foodNutrients": "array",
+     "publicationDate": "string",
+     "brandOwner": "string",
+     "gtinUpc": "string",
+     "ndbNumber": "integer",
+     "foodCode": "string",
+     "fdcIds": "array",
+     "format": "string",
+     "nutrients": "array"
+    },
+    "evidence": [
+     "openapi/_original/national-agricultural-library-openapi.json#GET /v1/food/{fdcId}",
+     "openapi/_original/national-agricultural-library-openapi.json#GET /v1/foods",
+     "openapi/_original/national-agricultural-library-openapi.json#POST /v1/foods"
+    ]
+   },
+   "noms": {
+    "segments": [
+     "foods"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "barcode": null,
+     "name": "string",
+     "description": null,
+     "scientific_name": null,
+     "country_of_origin": null,
+     "ingredients_text": null,
+     "is_foundational": null,
+     "basis_unit": "string",
+     "brand_id": null,
+     "food_group_id": null,
+     "canonical_id": null,
+     "brand": null,
+     "food_group": null,
+     "nutrients": null,
+     "serving_sizes": null,
+     "images": null,
+     "market_countries": null
+    },
+    "evidence": [
+     "openapi/_original/noms-openapi.json#GET /v1/foods",
+     "openapi/_original/noms-openapi.json#GET /v1/foods/{id}"
+    ]
+   },
+   "nutrientsdb": {
+    "segments": [
+     "foods"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "public_id": "integer",
+     "name": "string",
+     "nutrients": "object"
+    },
+    "evidence": [
+     "openapi/_original/nutrientsdb-sample-api-openapi.yml#GET /api/foods",
+     "openapi/_original/nutrientsdb-sample-openapi-original.json#GET /api/foods"
+    ]
+   },
+   "sparkyfitness": {
+    "segments": [
+     "foods"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "user_id": "string",
+     "name": "string",
+     "default_variant": "object",
+     "is_public": "boolean",
+     "brand": "string",
+     "barcode": "string",
+     "provider_type": "string",
+     "provider_external_id": "string",
+     "is_custom": "boolean",
+     "shared_with_public": "boolean",
+     "is_quick_food": "boolean",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sparkyfitness-openapi.yml#DELETE /foods/{id}",
+     "openapi/_original/sparkyfitness-openapi.yml#GET /foods",
+     "openapi/_original/sparkyfitness-openapi.yml#GET /foods/{foodId}",
+     "openapi/_original/sparkyfitness-openapi.yml#POST /foods",
+     "openapi/_original/sparkyfitness-openapi.yml#PUT /foods/{id}"
+    ]
+   },
+   "spoonacular": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "upc": "string",
+     "usdaCode": "string",
+     "breadcrumbs": "array",
+     "imageType": "string",
+     "badges": "array",
+     "importantBadges": "array",
+     "ingredientCount": "integer",
+     "generatedText": "string",
+     "ingredientList": "string",
+     "ingredients": "array",
+     "likes": "number",
+     "aisle": "string",
+     "credits": "object",
+     "nutrition": "object",
+     "price": "number",
+     "servings": "object",
+     "spoonacularScore": "number"
+    },
+    "evidence": [
+     "openapi/_original/spoonacular-openapi.yml#GET /food/products/{id}"
+    ]
+   },
+   "swiss-food-composition-database": {
+    "segments": [
+     "foods",
+     "food"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "generic": "boolean",
+     "names": "array",
+     "synonyms": "array",
+     "categories": "array",
+     "name": "string",
+     "ncf": "number",
+     "facf": "number",
+     "isgeneric": "boolean",
+     "isrecipe": "boolean",
+     "values": "array",
+     "matrixunitcode": "string",
+     "specificgravity": "number",
+     "yieldfactor": "number",
+     "foodid": "integer"
+    },
+    "evidence": [
+     "openapi/_original/swiss-food-composition-database-openapi.json#GET /webresources/BLV-api/food/{DBID}",
+     "openapi/_original/swiss-food-composition-database-openapi.json#GET /webresources/BLV-api/foods",
+     "openapi/_original/swiss-food-composition-database-openapi.yaml#GET /webresources/BLV-api/food/{DBID}",
+     "openapi/_original/swiss-food-composition-database-openapi.yaml#GET /webresources/BLV-api/foods"
+    ]
+   },
+   "tandoor": {
+    "segments": [
+     "food"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "plural_name": "string",
+     "description": "string",
+     "shopping": "string",
+     "recipe": null,
+     "url": "string",
+     "properties": "array",
+     "properties_food_amount": "number",
+     "properties_food_unit": null,
+     "fdc_id": "integer",
+     "food_onhand": "boolean",
+     "supermarket_category": null,
+     "parent": "integer",
+     "numchild": "integer",
+     "inherit_fields": "array",
+     "full_name": "string",
+     "ignore_shopping": "boolean",
+     "substitute": "array",
+     "substitute_siblings": "boolean",
+     "substitute_children": "boolean",
+     "substitute_onhand": "boolean",
+     "child_inherit_fields": "array",
+     "open_data_slug": "string",
+     "shopping_lists": "array"
+    },
+    "evidence": [
+     "openapi/_original/tandoor-api-openapi.yml#DELETE /api/food/{id}/",
+     "openapi/_original/tandoor-api-openapi.yml#GET /api/food/",
+     "openapi/_original/tandoor-api-openapi.yml#GET /api/food/{id}/",
+     "openapi/_original/tandoor-api-openapi.yml#PATCH /api/food/{id}/",
+     "openapi/_original/tandoor-api-openapi.yml#POST /api/food/",
+     "openapi/_original/tandoor-api-openapi.yml#PUT /api/food/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#DELETE /api/food/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#GET /api/food/",
+     "openapi/_original/tandoor-openapi-original.yml#GET /api/food/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#PATCH /api/food/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#POST /api/food/",
+     "openapi/_original/tandoor-openapi-original.yml#PUT /api/food/{id}/"
+    ]
+   },
+   "united-states-department-of-agriculture": {
+    "segments": [
+     "food",
+     "foods"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "fdcId": "integer",
+     "description": "string",
+     "dataType": "string",
+     "publicationDate": "string",
+     "foodClass": "string",
+     "foodNutrients": "array",
+     "foodAttributes": "array",
+     "inputFoods": "array",
+     "labelNutrients": "object"
+    },
+    "evidence": [
+     "openapi/_original/usda-fooddata-central-openapi.yml#GET /food/{fdcId}",
+     "openapi/_original/usda-fooddata-central-openapi.yml#GET /foods"
+    ]
+   },
+   "usda": {
+    "segments": [
+     "foods",
+     "food"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "dataType": "string",
+     "description": "string",
+     "fdcId": "integer",
+     "foodNutrients": "array",
+     "publicationDate": "string",
+     "brandOwner": "string",
+     "gtinUpc": "string",
+     "ndbNumber": "string",
+     "foodCode": "string",
+     "fdcIds": "array",
+     "format": "string",
+     "nutrients": "array"
+    },
+    "evidence": [
+     "openapi/_original/usda-fooddata-central-openapi.yml#GET /v1/food/{fdcId}",
+     "openapi/_original/usda-fooddata-central-openapi.yml#GET /v1/foods",
+     "openapi/_original/usda-fooddata-central-openapi.yml#POST /v1/foods"
+    ]
+   },
+   "usda-agricultural-research-service-ars-": {
+    "segments": [
+     "foods",
+     "food"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "fdcId": "integer",
+     "description": "string",
+     "dataType": "string",
+     "publishedDate": "string",
+     "foodNutrients": "array",
+     "foodCategory": "string",
+     "brandOwner": "string",
+     "ingredients": "string",
+     "servingSize": "number",
+     "servingSizeUnit": "string",
+     "modifiedDate": "string",
+     "fdcIds": "array",
+     "format": "string",
+     "nutrients": "array"
+    },
+    "evidence": [
+     "openapi/_original/usda-ars-fooddata-central-openapi.yml#GET /food/{fdcId}",
+     "openapi/_original/usda-ars-fooddata-central-openapi.yml#GET /foods",
+     "openapi/_original/usda-ars-fooddata-central-openapi.yml#POST /foods"
+    ]
+   }
+  },
+  "recipe": {
+   "apicbase": {
+    "segments": [
+     "recipes"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "count": "integer",
+     "next": "string",
+     "previous": "string",
+     "id": "string",
+     "uid": "string",
+     "name": "string",
+     "category": "string",
+     "sell_price": "number",
+     "created_date": "string"
+    },
+    "evidence": [
+     "openapi/_original/apicbase-openapi.yml#GET /api/v2/products/recipes/",
+     "openapi/_original/apicbase-openapi.yml#POST /api/v2/products/recipes/"
+    ]
+   },
+   "bigoven": {
+    "segments": [
+     "recipe",
+     "recipes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "markAsPending": "boolean",
+     "recipeId": "integer",
+     "scale": "number",
+     "ActiveMinutes": "integer",
+     "AdTags": "string",
+     "AdminBoost": "integer",
+     "AllCategoriesText": "string",
+     "BookmarkImageURL": "string",
+     "BookmarkSiteLogo": "string",
+     "BookmarkURL": "string",
+     "Category": "string",
+     "Collection": "string",
+     "CollectionID": "integer",
+     "CreationDate": "string",
+     "Cuisine": "string",
+     "Description": "string",
+     "FavoriteCount": "integer",
+     "HeroPhotoUrl": "string",
+     "ImageSquares": "array",
+     "ImageURL": "string",
+     "Ingredients": "array",
+     "IngredientsTextBlock": "string",
+     "Instructions": "string",
+     "IsBookmark": "boolean",
+     "IsPrivate": "boolean",
+     "IsRecipeScan": "boolean",
+     "IsSponsored": "boolean",
+     "LastModified": "string",
+     "MaxImageSquare": "integer",
+     "MedalCount": "integer",
+     "MenuCount": "integer",
+     "Microcategory": "string",
+     "NotesCount": "integer",
+     "NutritionInfo": "object",
+     "Poster": "object",
+     "PrimaryIngredient": "string",
+     "RecipeID": "integer",
+     "ReviewCount": "integer",
+     "StarRating": "number",
+     "Subcategory": "string",
+     "Title": "string",
+     "TotalMinutes": "integer",
+     "VariantOfRecipeID": "integer",
+     "VerifiedByClass": "string",
+     "VerifiedDateTime": "string",
+     "WebURL": "string",
+     "YieldNumber": "number",
+     "YieldUnit": "string",
+     "Data": "object",
+     "Message": "string",
+     "StatusCode": "integer",
+     "PhotoUrl": "string",
+     "Steps": "array",
+     "HasVideos": "boolean",
+     "Servings": "number",
+     "TotalTries": "integer",
+     "Videos": "array"
+    },
+    "evidence": [
+     "openapi/_original/bigoven-openapi.yaml#DELETE /recipe/{id}",
+     "openapi/_original/bigoven-openapi.yaml#GET /recipe/get/active/recipe",
+     "openapi/_original/bigoven-openapi.yaml#GET /recipe/{id}",
+     "openapi/_original/bigoven-openapi.yaml#GET /recipes",
+     "openapi/_original/bigoven-openapi.yaml#GET /recipes/{id}",
+     "openapi/_original/bigoven-openapi.yaml#POST /grocerylist/recipe",
+     "openapi/_original/bigoven-openapi.yaml#POST /recipe",
+     "openapi/_original/bigoven-openapi.yaml#PUT /recipe"
+    ]
+   },
+   "calorie-ninjas": {
+    "segments": [
+     "recipe"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "title": "string",
+     "ingredients": "string",
+     "servings": "string",
+     "instructions": "string"
+    },
+    "evidence": [
+     "openapi/_original/calorieninjas-openapi.yml#GET /recipe"
+    ]
+   },
+   "jelly-belly": {
+    "segments": [
+     "recipes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/jelly-belly-openapi.yml#GET /api/Recipes",
+     "openapi/_original/jelly-belly-openapi.yml#GET /api/Recipes/{id}"
+    ]
+   },
+   "kitchenstories": {
+    "segments": [
+     "recipes",
+     "recipe"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "errors": "array",
+     "id": "string",
+     "title": "string",
+     "slug": "string",
+     "type": "string",
+     "content_id": "string",
+     "difficulty": "string",
+     "chefs_note": "string",
+     "image": "object",
+     "author": "object",
+     "url": "string",
+     "duration": "object",
+     "user_reactions": "object",
+     "servings": "object",
+     "nutrition": "object",
+     "publishing": "object",
+     "meta": "object",
+     "tags": "array",
+     "content_meta": "array",
+     "categories": "object",
+     "video": "object",
+     "howto_videos": "array",
+     "steps": "array",
+     "utensils": "array",
+     "ingredients": "array",
+     "article": null,
+     "hide_for_web": "boolean",
+     "hide_for_app": "boolean",
+     "image_id": null,
+     "preparation_time": "number",
+     "resting_time": "number",
+     "baking_time": "number"
+    },
+    "evidence": [
+     "openapi/_original/kitchenstories-internal-openapi.json#DELETE /users/me/cookbooks/{cookbook-uuid}/recipes/{feeditem-uuid}/",
+     "openapi/_original/kitchenstories-internal-openapi.json#DELETE /users/me/recipes/{uuid}/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /indexer/recipe/{uuid}/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /recipes/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /recipes/{uuid-or-slug}/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /users/me/cookbooks/{cookbook-uuid}/recipes/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /users/me/recipes/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /users/me/recipes/{uuid}/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /users/{user-id}/recipes/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /users/{user-id}/recipes/{recipe-id}/",
+     "openapi/_original/kitchenstories-internal-openapi.json#GET /users/{uuid-or-slug}/cookbooks/{cookbook-uuid}/recipes/",
+     "openapi/_original/kitchenstories-internal-openapi.json#POST /users/me/cookbooks/{cookbook-uuid}/recipes/"
+    ]
+   },
+   "logmeal": {
+    "segments": [
+     "dishes",
+     "recipe",
+     "recipes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "food": "array",
+     "drinks": "array",
+     "ingredients": "array",
+     "sauces": "array",
+     "combo": "array",
+     "customRecipe": "array",
+     "cooking_measures": "object",
+     "weight": "object",
+     "food_class_id": "integer",
+     "recipe_name": "string",
+     "image_url": "string",
+     "recipe_url": "string",
+     "recipe_steps": "array",
+     "meal_type": "string",
+     "cuisine_type": "string",
+     "id": "integer",
+     "name": "string",
+     "portion_size": "number",
+     "auto_computed_nutritional_indicators": "boolean",
+     "dish": "string",
+     "externalId": "string",
+     "has_ingredient_info": "boolean",
+     "has_nutritional_info": "boolean",
+     "image_id": "integer",
+     "ingredient_list": "array",
+     "ingredients_source": "string",
+     "nutritional_indicators": "array",
+     "nutrition_source": "string",
+     "restaurant_recipe_id": "integer",
+     "sugar_modulation": "boolean",
+     "translations": "object",
+     "recipe": "object",
+     "available_nutritional_sources": "array",
+     "result": "string",
+     "dish_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/logmeal-openapi.json#GET /v2/dataset/dishes",
+     "openapi/_original/logmeal-openapi.json#GET /v2/dataset/dishes/{model_version}",
+     "openapi/_original/logmeal-openapi.json#GET /v2/dataset/weightMeasures/dishes",
+     "openapi/_original/logmeal-openapi.json#GET /v2/kiosk/external/dishes",
+     "openapi/_original/logmeal-openapi.json#GET /v2/kiosk/external/recipe/{restaurant_class_id}",
+     "openapi/_original/logmeal-openapi.json#GET /v2/kiosk/external/recipes",
+     "openapi/_original/logmeal-openapi.json#GET /v2/recommend/recipe",
+     "openapi/_original/logmeal-openapi.json#PATCH /v2/kiosk/external/recipe/{restaurant_class_id}"
+    ]
+   },
+   "mealie": {
+    "segments": [
+     "recipes",
+     "recipe"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection",
+     "POST item",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "lastMade": null,
+     "recipeId": "string",
+     "name": null,
+     "extras": null,
+     "createdAt": null,
+     "updatedAt": null,
+     "groupId": "string",
+     "userId": "string",
+     "id": "string",
+     "listItems": "array",
+     "householdId": "string",
+     "recipeReferences": "array",
+     "labelSettings": "array",
+     "recipeIncrementQuantity": "number",
+     "recipeIngredients": null,
+     "page": "integer",
+     "per_page": "integer",
+     "total": "integer",
+     "total_pages": "integer",
+     "items": "array",
+     "next": null,
+     "previous": null,
+     "slug": "string",
+     "image": null,
+     "recipeServings": "number",
+     "recipeYieldQuantity": "number",
+     "recipeYield": null,
+     "totalTime": null,
+     "prepTime": null,
+     "cookTime": null,
+     "performTime": null,
+     "description": null,
+     "recipeCategory": null,
+     "tags": null,
+     "tools": "array",
+     "rating": null,
+     "orgURL": null,
+     "dateAdded": null,
+     "dateUpdated": null,
+     "update_at": null,
+     "recipeIngredient": "array",
+     "recipeInstructions": null,
+     "nutrition": null,
+     "settings": null,
+     "assets": null,
+     "notes": null,
+     "comments": null,
+     "expiresAt": "string",
+     "recipe": "object"
+    },
+    "evidence": [
+     "openapi/_original/mealie-openapi.json#DELETE /api/recipes/{slug}",
+     "openapi/_original/mealie-openapi.json#DELETE /api/shared/recipes/{item_id}",
+     "openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/recipes",
+     "openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/recipes/{recipe_slug}",
+     "openapi/_original/mealie-openapi.json#GET /api/households/self/recipes/{recipe_slug}",
+     "openapi/_original/mealie-openapi.json#GET /api/recipes",
+     "openapi/_original/mealie-openapi.json#GET /api/recipes/{slug}",
+     "openapi/_original/mealie-openapi.json#GET /api/shared/recipes",
+     "openapi/_original/mealie-openapi.json#GET /api/shared/recipes/{item_id}",
+     "openapi/_original/mealie-openapi.json#PATCH /api/recipes",
+     "openapi/_original/mealie-openapi.json#PATCH /api/recipes/{slug}",
+     "openapi/_original/mealie-openapi.json#POST /api/households/shopping/lists/{item_id}/recipe"
+    ]
+   },
+   "new-york-public-library-whats-on-the-menu": {
+    "segments": [
+     "dishes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/new-york-public-library-whats-on-the-menu-openapi-original.yaml#GET /dishes",
+     "openapi/_original/new-york-public-library-whats-on-the-menu-openapi-original.yaml#GET /dishes/{id}",
+     "openapi/_original/new-york-public-library-whats-on-the-menu-openapi-original.yaml#GET /menus/{id}/dishes"
+    ]
+   },
+   "piknik-spot": {
+    "segments": [
+     "recipes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/piknik-spot-openapi.json#DELETE /recipes/{id}",
+     "openapi/_original/piknik-spot-openapi.json#GET /recipes",
+     "openapi/_original/piknik-spot-openapi.json#GET /recipes/{id}",
+     "openapi/_original/piknik-spot-openapi.json#PATCH /recipes/{id}",
+     "openapi/_original/piknik-spot-openapi.json#POST /recipes",
+     "openapi/_original/piknik-spot-openapi.yml#DELETE /recipes/{id}",
+     "openapi/_original/piknik-spot-openapi.yml#GET /recipes",
+     "openapi/_original/piknik-spot-openapi.yml#GET /recipes/{id}",
+     "openapi/_original/piknik-spot-openapi.yml#PATCH /recipes/{id}",
+     "openapi/_original/piknik-spot-openapi.yml#POST /recipes"
+    ]
+   },
+   "recipe-api": {
+    "segments": [
+     "recipes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "category": "string",
+     "cuisine": "string",
+     "difficulty": "string",
+     "tags": "array",
+     "meta": "object",
+     "dietary": "object",
+     "nutrition_summary": "object",
+     "storage": "object",
+     "equipment": "array",
+     "ingredients": "array",
+     "instructions": "array",
+     "troubleshooting": "array",
+     "chef_notes": "array",
+     "cultural_context": "string",
+     "nutrition": "object"
+    },
+    "evidence": [
+     "openapi/_original/recipe-api-openapi.json#GET /api/v1/recipes",
+     "openapi/_original/recipe-api-openapi.json#GET /api/v1/recipes/{id}"
+    ]
+   },
+   "rockwell-factorytalk": {
+    "segments": [
+     "recipes"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "tagName": "string",
+     "value": null,
+     "units": "string"
+    },
+    "evidence": [
+     "openapi/_original/rockwell-factorytalk-optix-openapi.yml#GET /recipes"
+    ]
+   },
+   "spoonacular": {
+    "segments": [
+     "dishes"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "pairings": "array",
+     "text": "string"
+    },
+    "evidence": [
+     "openapi/_original/spoonacular-openapi.yml#GET /food/wine/dishes"
+    ]
+   },
+   "tandoor": {
+    "segments": [
+     "recipe"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "image": "string",
+     "keywords": "array",
+     "working_time": "integer",
+     "waiting_time": "integer",
+     "created_by": null,
+     "created_at": "string",
+     "updated_at": "string",
+     "internal": "boolean",
+     "private": "boolean",
+     "servings": "integer",
+     "servings_text": "string",
+     "rating": "number",
+     "last_cooked": "string",
+     "new": "boolean",
+     "recent": "string",
+     "steps": "array",
+     "source_url": "string",
+     "show_ingredient_overview": "boolean",
+     "nutrition": null,
+     "properties": "array",
+     "food_properties": null,
+     "file_path": "string",
+     "diameter": "integer",
+     "diameter_text": "string",
+     "shared": "array"
+    },
+    "evidence": [
+     "openapi/_original/tandoor-api-openapi.yml#DELETE /api/recipe/{id}/",
+     "openapi/_original/tandoor-api-openapi.yml#GET /api/recipe/",
+     "openapi/_original/tandoor-api-openapi.yml#GET /api/recipe/{id}/",
+     "openapi/_original/tandoor-api-openapi.yml#PATCH /api/recipe/{id}/",
+     "openapi/_original/tandoor-api-openapi.yml#POST /api/recipe/",
+     "openapi/_original/tandoor-api-openapi.yml#PUT /api/recipe/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#DELETE /api/recipe/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#GET /api/recipe/",
+     "openapi/_original/tandoor-openapi-original.yml#GET /api/recipe/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#PATCH /api/recipe/{id}/",
+     "openapi/_original/tandoor-openapi-original.yml#POST /api/recipe/",
+     "openapi/_original/tandoor-openapi-original.yml#PUT /api/recipe/{id}/"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "a2-milk-company",
+    "aerofarms",
+    "altruistiq",
+    "apicbase",
+    "azumio",
+    "bigoven",
+    "calorie-ninjas",
+    "chowly",
+    "crunchtime",
+    "davita",
+    "dietlyapi",
+    "edamam",
+    "edamam-recipes",
+    "fatsecret",
+    "food-info",
+    "food-safety-and-inspection-service",
+    "fudo",
+    "kitchenstories",
+    "lish",
+    "logmeal",
+    "mealie",
+    "mealme",
+    "national-agricultural-library",
+    "new-york-public-library-whats-on-the-menu",
+    "noms",
+    "nory",
+    "nutrientsdb",
+    "ok-capsule",
+    "open-food-facts",
+    "openfda",
+    "opply",
+    "pepsico",
+    "piknik-spot",
+    "punkapi",
+    "rakuten",
+    "recipe-api",
+    "redefine-meat",
+    "rekki",
+    "rettfrabonden-com",
+    "rockwell-factorytalk",
+    "sojo-industries",
+    "sparkyfitness",
+    "spoonacular",
+    "starbucks",
+    "swiss-food-composition-database",
+    "sysco",
+    "tandoor",
+    "trustwell",
+    "tyson-foods",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "kebab-case": [
+    "a2-milk-company",
+    "aerofarms",
+    "altruistiq",
+    "api-league",
+    "crunchtime",
+    "davita",
+    "edamam",
+    "edamam-recipes",
+    "fatsecret",
+    "food-info",
+    "fudo",
+    "kitchenstories",
+    "mealie",
+    "national-agricultural-library",
+    "noms",
+    "nory",
+    "ok-capsule",
+    "open-food-facts",
+    "opply",
+    "piknik-spot",
+    "recipe-api",
+    "redefine-meat",
+    "rekki",
+    "rettfrabonden-com",
+    "sojo-industries",
+    "sparkyfitness",
+    "spoonacular",
+    "tandoor",
+    "unicef-data",
+    "usda",
+    "wger"
+   ],
+   "other": [
+    "a2-milk-company",
+    "crunchtime",
+    "food-safety-and-inspection-service",
+    "free-cocktail-api",
+    "mealdb",
+    "mealie",
+    "open-food-facts",
+    "openfda",
+    "openmenu",
+    "opply",
+    "piknik-spot",
+    "rakuten",
+    "rettfrabonden-com",
+    "spoonacular",
+    "swiss-food-composition-database",
+    "tandoor",
+    "united-states-department-of-agriculture"
+   ],
+   "snake_case": [
+    "aerofarms",
+    "apicbase",
+    "kitchenstories",
+    "logmeal",
+    "mealme",
+    "open-food-facts",
+    "opply",
+    "piknik-spot",
+    "redefine-meat",
+    "rekki",
+    "sparkyfitness",
+    "swiss-food-composition-database",
+    "tandoor",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "camelCase": [
+    "crunchtime",
+    "logmeal",
+    "nory",
+    "spoonacular",
+    "swiss-food-composition-database",
+    "zestful"
+   ],
+   "PascalCase": [
+    "jelly-belly",
+    "logmeal",
+    "rakuten",
+    "unicef-data"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "aerofarms",
+    "altruistiq",
+    "api-league",
+    "apicbase",
+    "bigoven",
+    "calorie-ninjas",
+    "crunchtime",
+    "davita",
+    "dietlyapi",
+    "edamam",
+    "edamam-recipes",
+    "fatsecret",
+    "food-info",
+    "food-safety-and-inspection-service",
+    "free-cocktail-api",
+    "fudo",
+    "kitchenstories",
+    "lish",
+    "logmeal",
+    "mealdb",
+    "mealie",
+    "mealme",
+    "national-agricultural-library",
+    "new-york-public-library-whats-on-the-menu",
+    "noms",
+    "nory",
+    "nutrientsdb",
+    "ok-capsule",
+    "open-food-facts",
+    "openfda",
+    "openmenu",
+    "opply",
+    "piknik-spot",
+    "punkapi",
+    "rakuten",
+    "recipe-api",
+    "redefine-meat",
+    "rekki",
+    "rettfrabonden-com",
+    "rockwell-factorytalk",
+    "sojo-industries",
+    "sparkyfitness",
+    "spoonacular",
+    "starbucks",
+    "swiss-food-composition-database",
+    "sysco",
+    "tandoor",
+    "trustwell",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "snake_case": [
+    "aerofarms",
+    "apicbase",
+    "azumio",
+    "bigoven",
+    "davita",
+    "dietlyapi",
+    "edamam-recipes",
+    "fatsecret",
+    "food-info",
+    "kitchenstories",
+    "lish",
+    "logmeal",
+    "mealie",
+    "mealme",
+    "new-york-public-library-whats-on-the-menu",
+    "noms",
+    "nory",
+    "ok-capsule",
+    "open-food-facts",
+    "openmenu",
+    "opply",
+    "piknik-spot",
+    "punkapi",
+    "recipe-api",
+    "redefine-meat",
+    "rekki",
+    "rettfrabonden-com",
+    "sparkyfitness",
+    "tandoor",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "camelCase": [
+    "altruistiq",
+    "bigoven",
+    "crunchtime",
+    "edamam",
+    "edamam-recipes",
+    "food-info",
+    "jelly-belly",
+    "logmeal",
+    "mealie",
+    "national-agricultural-library",
+    "opply",
+    "piknik-spot",
+    "rakuten",
+    "rettfrabonden-com",
+    "rockwell-factorytalk",
+    "sparkyfitness",
+    "spoonacular",
+    "sysco",
+    "tandoor",
+    "trustwell",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-"
+   ],
+   "other": [
+    "aerofarms",
+    "crunchtime",
+    "davita",
+    "edamam",
+    "edamam-recipes",
+    "noms",
+    "open-food-facts",
+    "opply",
+    "redefine-meat",
+    "unicef-data",
+    "wger"
+   ],
+   "kebab-case": [
+    "aerofarms",
+    "api-league",
+    "davita",
+    "edamam",
+    "edamam-recipes",
+    "spoonacular"
+   ],
+   "PascalCase": [
+    "rekki",
+    "swiss-food-composition-database"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "api-league",
+    "bigoven",
+    "dietlyapi",
+    "edamam-recipes",
+    "food-info",
+    "logmeal",
+    "mealie",
+    "nory",
+    "nutrientsdb",
+    "ok-capsule",
+    "open-food-facts",
+    "openfda",
+    "opply",
+    "piknik-spot",
+    "rettfrabonden-com",
+    "rockwell-factorytalk",
+    "sojo-industries",
+    "sparkyfitness",
+    "starbucks",
+    "swiss-food-composition-database",
+    "tandoor",
+    "unicef-data",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "page": [
+    "aerofarms",
+    "apicbase",
+    "davita",
+    "fudo",
+    "kitchenstories",
+    "lish",
+    "mealie",
+    "mealme",
+    "open-food-facts",
+    "opply",
+    "piknik-spot",
+    "punkapi",
+    "rakuten",
+    "recipe-api",
+    "redefine-meat",
+    "sojo-industries",
+    "sparkyfitness",
+    "spoonacular",
+    "sysco",
+    "tandoor",
+    "trustwell",
+    "unicef-data"
+   ],
+   "offset": [
+    "aerofarms",
+    "api-league",
+    "davita",
+    "dietlyapi",
+    "lish",
+    "logmeal",
+    "openmenu",
+    "opply",
+    "piknik-spot",
+    "redefine-meat",
+    "rettfrabonden-com",
+    "rockwell-factorytalk",
+    "sparkyfitness",
+    "spoonacular",
+    "starbucks",
+    "swiss-food-composition-database",
+    "unicef-data",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "page_size": [
+    "altruistiq",
+    "crunchtime",
+    "jelly-belly",
+    "national-agricultural-library",
+    "noms",
+    "open-food-facts",
+    "opply",
+    "piknik-spot",
+    "sparkyfitness",
+    "sysco",
+    "tandoor",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "per_page": [
+    "aerofarms",
+    "altruistiq",
+    "davita",
+    "lish",
+    "mealie",
+    "punkapi",
+    "recipe-api",
+    "redefine-meat",
+    "trustwell"
+   ],
+   "after": [
+    "aerofarms",
+    "davita",
+    "lish",
+    "redefine-meat"
+   ],
+   "before": [
+    "aerofarms",
+    "davita",
+    "lish",
+    "redefine-meat"
+   ],
+   "cursor": [
+    "noms",
+    "ok-capsule",
+    "opply",
+    "wger"
+   ],
+   "start": [
+    "kitchenstories",
+    "usda-agricultural-research-service-ars-",
+    "wger"
+   ],
+   "size": [
+    "open-food-facts",
+    "piknik-spot"
+   ],
+   "max_results": [
+    "fatsecret"
+   ],
+   "count": [
+    "openfda"
+   ],
+   "skip": [
+    "openfda"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "aerofarms",
+    "altruistiq",
+    "apicbase",
+    "bigoven",
+    "davita",
+    "dietlyapi",
+    "edamam",
+    "edamam-recipes",
+    "food-info",
+    "fudo",
+    "jelly-belly",
+    "kitchenstories",
+    "lish",
+    "logmeal",
+    "mealie",
+    "new-york-public-library-whats-on-the-menu",
+    "noms",
+    "nory",
+    "ok-capsule",
+    "open-food-facts",
+    "opply",
+    "piknik-spot",
+    "recipe-api",
+    "redefine-meat",
+    "rekki",
+    "rettfrabonden-com",
+    "sparkyfitness",
+    "spoonacular",
+    "swiss-food-composition-database",
+    "tandoor",
+    "unicef-data",
+    "wger"
+   ],
+   "camelCase": [
+    "altruistiq",
+    "bigoven",
+    "chowly",
+    "crunchtime",
+    "food-info",
+    "free-cocktail-api",
+    "logmeal",
+    "mealdb",
+    "national-agricultural-library",
+    "nory",
+    "ok-capsule",
+    "piknik-spot",
+    "punkapi",
+    "rettfrabonden-com",
+    "rockwell-factorytalk",
+    "sparkyfitness",
+    "starbucks",
+    "swiss-food-composition-database",
+    "sysco",
+    "tandoor",
+    "trustwell",
+    "tyson-foods",
+    "unicef-data",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-"
+   ],
+   "snake_case": [
+    "davita",
+    "dietlyapi",
+    "edamam-recipes",
+    "kitchenstories",
+    "logmeal",
+    "mealie",
+    "ok-capsule",
+    "open-food-facts",
+    "opply",
+    "redefine-meat",
+    "sojo-industries",
+    "spoonacular",
+    "unicef-data"
+   ],
+   "PascalCase": [
+    "swiss-food-composition-database",
+    "unicef-data"
+   ],
+   "kebab-case": [
+    "kitchenstories"
+   ],
+   "other": [
+    "opply"
+   ]
+  },
+  "property": {
+   "lower": [
+    "apicbase",
+    "bigoven",
+    "calorie-ninjas",
+    "dietlyapi",
+    "food-info",
+    "kitchenstories",
+    "logmeal",
+    "mealie",
+    "national-agricultural-library",
+    "noms",
+    "nutrientsdb",
+    "recipe-api",
+    "rockwell-factorytalk",
+    "sparkyfitness",
+    "spoonacular",
+    "swiss-food-composition-database",
+    "tandoor",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-"
+   ],
+   "snake_case": [
+    "apicbase",
+    "dietlyapi",
+    "kitchenstories",
+    "logmeal",
+    "mealie",
+    "noms",
+    "nutrientsdb",
+    "recipe-api",
+    "sparkyfitness",
+    "tandoor"
+   ],
+   "camelCase": [
+    "bigoven",
+    "food-info",
+    "logmeal",
+    "mealie",
+    "national-agricultural-library",
+    "rockwell-factorytalk",
+    "spoonacular",
+    "united-states-department-of-agriculture",
+    "usda",
+    "usda-agricultural-research-service-ars-"
+   ],
+   "PascalCase": [
+    "bigoven"
+   ]
+  }
+ }
+}

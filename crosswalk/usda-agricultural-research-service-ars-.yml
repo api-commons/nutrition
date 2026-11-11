@@ -1,0 +1,24 @@
+provider: usda-agricultural-research-service-ars-
+apis_io: https://apis.io/providers/usda-agricultural-research-service-ars-/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    - food
+    properties:
+      id: fdcId
+      description: description
+      nutrients:
+      - foodNutrients
+      - nutrients
+      brand: brandOwner
+      data_type: dataType
+      fdc_ids: fdcIds
+      format: format
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/usda-ars-fooddata-central-openapi.yml#GET /food/{fdcId}
+    - openapi/_original/usda-ars-fooddata-central-openapi.yml#GET /foods
+    - openapi/_original/usda-ars-fooddata-central-openapi.yml#POST /foods

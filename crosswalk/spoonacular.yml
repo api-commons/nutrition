@@ -1,0 +1,23 @@
+provider: spoonacular
+apis_io: https://apis.io/providers/spoonacular/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - products
+    properties:
+      id: id
+      name: title
+      nutrients: nutrition
+      barcode: upc
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/spoonacular-openapi.yml#GET /food/products/{id}
+  recipe:
+    path_segment:
+    - dishes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/spoonacular-openapi.yml#GET /food/wine/dishes

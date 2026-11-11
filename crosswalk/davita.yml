@@ -1,0 +1,12 @@
+provider: davita
+apis_io: https://apis.io/providers/davita/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - food
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/davita-wp-rest.yml#GET /davita/v1/usda/food/{id}

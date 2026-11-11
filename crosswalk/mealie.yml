@@ -1,0 +1,42 @@
+provider: mealie
+apis_io: https://apis.io/providers/mealie/
+context: nutrition
+generated: '2026-11-11'
+concepts:
+  food:
+    path_segment:
+    - foods
+    properties:
+      id: id
+      description: description
+      name:
+      - name
+      - label
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/mealie-openapi.json#DELETE /api/foods/{item_id}
+    - openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/foods
+    - openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/foods/{item_id}
+    - openapi/_original/mealie-openapi.json#GET /api/foods
+    - openapi/_original/mealie-openapi.json#GET /api/foods/{item_id}
+  recipe:
+    path_segment:
+    - recipes
+    - recipe
+    properties:
+      name: name
+      id:
+      - recipeId
+      - id
+      image_url: image
+      description: description
+      nutrients: nutrition
+      created_at: createdAt
+      tags: tags
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/mealie-openapi.json#DELETE /api/recipes/{slug}
+    - openapi/_original/mealie-openapi.json#DELETE /api/shared/recipes/{item_id}
+    - openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/recipes
+    - openapi/_original/mealie-openapi.json#GET /api/explore/groups/{group_slug}/recipes/{recipe_slug}
+    - openapi/_original/mealie-openapi.json#GET /api/households/self/recipes/{recipe_slug}
