@@ -41,3 +41,6 @@ decisions:
   - >-
     nutrients is the canonical name for a food's or a recipe's nutrition facts (over nutrition,
     nutriments and food_nutrients).
+standards:
+  - standard: schemaorg-30.1
+    concepts: {food: [NutritionInformation], recipe: [Recipe]}
